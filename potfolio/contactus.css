@@ -1,0 +1,34 @@
+
+
+.contact-me{
+    text-align: center;
+}
+.contact-form-main{
+    display: flex;
+    flex-direction: row;
+ 
+
+}
+.contact-main{
+    width: 100%;
+    background-color: black;
+    
+
+}
+.form-img{
+    width: 500px;
+    height: 100px;
+   
+    overflow: hidden;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 80vh;
+    border: 2px solid black;
+}
+.contact-img{
+    width: 40vw;
+    height: 80vh;
+}

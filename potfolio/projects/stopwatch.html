@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 59px;
+          
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 100px;
+            background-color: rgb(12, 12, 12);
+
+        }
+        h1{
+            
+            font-size: 59px;
+            color: red;
+        }
+        .button{
+ display: flex;
+ gap: 19px;
+
+
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="stopwatch">
+        <h1 id="displaytime">00:00:00</h1>
+    <div class="button">
+        <img src="./reset.png" alt=""onclick="watchreset()" >
+        <img src="./play-button-red-icon.png" alt="" onclick="watchstart()">
+        <img src="./pause-button-red-icon.webp" alt="" onclick="watchstop()">
+    </div>
+</div>
+<script src="stopwatch.js"></script>
+</body>
+</html>

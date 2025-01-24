@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        #main-container-contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #right-left {
+            width: 90%;
+            max-width: 1124px;
+            margin: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            border: 2px solid black;
+            box-shadow: rgba(234, 232, 232, 0.25) 0px 54px 55px, rgba(255, 251, 251, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            margin-top: 10%;
+            padding: 20px;
+            box-sizing: border-box;
+           
+        }
+        #left-box, #right-box {
+            width: 45%;
+            min-width: 300px;
+            margin: 10px;
+        }
+        #name,#username, #inside-text {
+            color: black;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        #left-box {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+           
+          
+        }
+        #right-box h3 {
+            font-size: 3.5rem;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0;
+          
+        }
+        #left-box div {
+            margin: 10px 0;
+        }
+        #left-box div input, .tetx-area textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 7px;
+            background-color: rgb(239, 236, 236);
+            
+            border: none;
+        }
+        .send-btn {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .send-btn:hover {
+            background-color: #0056b3;
+        }
+        .tetx-area {
+            margin: 10px 0;
+        }
+        .social-media {
+            width: 19rem;
+            height: 3rem;
+            text-align: center;
+            margin-top: 20px;
+          background-color: rgb(88, 88, 88);
+            border-radius: 5px;
+         
+        }
+        .social-media a {
+          
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        @media (max-width: 768px) {
+            #right-left {
+                flex-direction: column;
+            }
+            #left-box, #right-box {
+                width: 90%;
+            }
+            #right-box h3 {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 528px) {
+            #right-left {
+                padding: 10px;
+            }
+            #left-box, #right-box {
+                width: 100%;
+            }
+            #right-box h3 {
+                font-size: 1.5rem;
+            }
+            .send-btn {
+                width: auto;
+                height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+            }
+        }
+       .social-media:hover{
+        background-color: rgb(66, 66, 66);
+        transition-duration: 1s;
+       }
+    </style>
+</head>
+<body>
+    <div id="main-container-contact">
+    <div id="right-left">      
+        <div id="left-box">
+            <div class="Name">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="email">
+                <input type="text" id="username" placeholder="Email">
+            </div>
+            <div class="tetx-area">
+                <textarea name="ip" rows="13" placeholder="Your Message" id="inside-text"></textarea>
+                <button class="send-btn" id="send">Send</button>
+            </div>
+        </div>
+        <div id="right-box">
+            <h3>Contact Me</h3>
+        </div>
+    </div>
+
+    <div class="social-media">
+       <a href="https://www.linkedin.com/in/divyansh-jeena-062b91322/?originalSubdomain=in"><img src="./icons8-linkedin.svg" alt=""></a>
+       <a href="https://github.com/8958524821/javascriptmain"><img src="./icons8-github.svg" alt=""></a>
+    </div>
+    </div>
+    <script src="./contactus.js">
+
+    </script>
+</body>
+</html>
