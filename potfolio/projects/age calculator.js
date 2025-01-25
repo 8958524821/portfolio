@@ -1,4 +1,5 @@
  function calculateage(){
+  
     const today= new Date();
     const birthdateinput=document.getElementById("op").value;
     const birthdateparts=birthdateinput.split("-");
@@ -19,6 +20,11 @@
     console.log(ageinmilliseconds);
     const resultcontainer=document.getElementById("resultcontainer");
     const result=document.getElementById("result");
+    if(birthdate>today){
+      result.innerHTML="Invalid Birthdate";
+      return;
+    }
+    else{
     result.innerHTML=`
      <div class="result-item">
                     <h3>Age:</h3>
@@ -50,7 +56,7 @@
                 </div>
     
     
-    `;
+    `;}
 };
 
 
